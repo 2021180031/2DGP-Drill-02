@@ -51,7 +51,7 @@ while 1:
     while rad> -pi/2:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(230*math.cos(rad)+400, 230*math.sin(rad)+345)
+        character.draw_now(235*math.cos(rad)+400, 235*math.sin(rad)+325)
         update_canvas()
         rad-=0.01
         delay(0.01)
