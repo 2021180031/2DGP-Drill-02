@@ -47,14 +47,19 @@ def move_rectangle():
 
 
 def move_left_diagonal():
+    print("Moving left diagonal")
     pass
 
 
 def move_right_diagonal():
+    print("Moving left diagonal")
     pass
 
 
 def move_bottom_of_triangle():
+    print('Moving bottom')
+    for x in range(15, 785, 5):
+        draw_boy(x, 90)
     pass
 
 
@@ -89,9 +94,9 @@ def draw_boy(x: float, y: float):
 
 
 while True:
-    move_rectangle()
+   # move_rectangle()
     move_triangle()
-    move_circle()
+    #move_circle()
 
 
 
