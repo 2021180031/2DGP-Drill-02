@@ -48,6 +48,16 @@ def move_rectangle():
 
 def move_left_diagonal():
     print("Moving left diagonal")
+    y=90
+    x=785
+
+    while 400<x and y<550:
+        draw_boy(x, y)
+        y+=5
+        x-=5
+
+
+
     pass
 
 
@@ -65,7 +75,7 @@ def move_bottom_of_triangle():
 
 def move_triangle():
     print("Moving triangle")
-    move_bottom_of_triangle()
+   # move_bottom_of_triangle()
     move_left_diagonal()
     move_right_diagonal()
 
