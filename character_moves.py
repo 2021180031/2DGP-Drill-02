@@ -51,21 +51,23 @@ def move_left_diagonal():
     y=90
     x=785
 
-    while 400<x and y<550:
+    while 400<x:
         draw_boy(x, y)
         y+=5
         x-=5
 
-    while x<=400 and y<550:
 
-        draw_boy(x, y)
-        y-=5
-        x-=5
     pass
 
 
 def move_right_diagonal():
     print("Moving left diagonal")
+    x=400
+    y=475
+    while 0 < x <= 400:
+        draw_boy(x, y)
+        y -= 5
+        x -= 5
     pass
 
 
@@ -78,7 +80,7 @@ def move_bottom_of_triangle():
 
 def move_triangle():
     print("Moving triangle")
-   # move_bottom_of_triangle()
+    move_bottom_of_triangle()
     move_left_diagonal()
     move_right_diagonal()
 
@@ -98,7 +100,7 @@ def move_circle():
 
 
 def draw_boy(x: float, y: float):
-    clear_canvas_now()
+   # clear_canvas_now()
     boy.draw_now(x, y)
     delay(0.1)
 
