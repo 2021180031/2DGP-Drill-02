@@ -8,6 +8,8 @@ boy = load_image('character.png')
 
 def move_top():
     print('Moving top')
+    for x in range(0,800,5):
+        draw_boy(x,550)
     pass
 
 
@@ -58,7 +60,7 @@ def draw_boy(x: float, y: float):
 
 while True:
 
-    move_circle()
+    #move_circle()
     move_rectangle()
 
     # break
