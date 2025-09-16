@@ -100,7 +100,7 @@ def move_circle():
 
 
 def draw_boy(x: float, y: float):
-   # clear_canvas_now()
+    clear_canvas_now()
     boy.draw_now(x, y)
     delay(0.1)
 
@@ -109,9 +109,9 @@ def draw_boy(x: float, y: float):
 
 
 while True:
-   # move_rectangle()
+    move_rectangle()
     move_triangle()
-    #move_circle()
+    move_circle()
 
 
 
