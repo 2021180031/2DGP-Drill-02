@@ -64,7 +64,7 @@ def move_right_diagonal():
     print("Moving left diagonal")
     x=400
     y=475
-    while 0 < x <= 400:
+    while 15 < x <= 400:
         draw_boy(x, y)
         y -= 5
         x -= 5
