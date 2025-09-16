@@ -7,18 +7,22 @@ boy = load_image('character.png')
 
 
 def move_top():
+    print('Moving top')
     pass
 
 
 def move_right():
+    print('Moving right')
     pass
 
 
 def move_bottom():
+    print('Moving bottom')
     pass
 
 
 def move_left():
+    print('Moving left')
     pass
 
 
@@ -45,7 +49,7 @@ def move_circle():
 
         clear_canvas_now()
         boy.draw_now(x+400,y+300)
-         delay(0.1)
+        delay(0.1)
     pass
 
 
