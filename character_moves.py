@@ -56,8 +56,11 @@ def move_left_diagonal():
         y+=5
         x-=5
 
+    while x<=400 and y<550:
 
-
+        draw_boy(x, y)
+        y-=5
+        x-=5
     pass
 
 
