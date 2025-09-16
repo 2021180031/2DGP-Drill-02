@@ -20,7 +20,7 @@ def move_right():
     pass
 
 
-def move_bottom():
+def move_bottom_of_rectangle():
     print('Moving bottom')
     for x in range(785, 15, -5):
         draw_boy(x, 90)
@@ -39,10 +39,31 @@ def move_rectangle():
 
     move_top()
     move_right()
-    move_bottom()
+    move_bottom_of_rectangle()
     move_left()
     
     
+    pass
+
+
+def move_left_diagonal():
+    pass
+
+
+def move_right_diagonal():
+    pass
+
+
+def move_bottom_of_triangle():
+    pass
+
+
+def move_triangle():
+    print("Moving triangle")
+    move_bottom_of_triangle()
+    move_left_diagonal()
+    move_right_diagonal()
+
     pass
 
 
@@ -64,9 +85,14 @@ def draw_boy(x: float, y: float):
     delay(0.1)
 
 
+
+
+
 while True:
     move_rectangle()
+    move_triangle()
     move_circle()
+
 
 
     # break
