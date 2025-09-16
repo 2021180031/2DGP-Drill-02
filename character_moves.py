@@ -43,14 +43,17 @@ def move_circle():
 
     r = 200
     for deg in range(0,360):
-        x = r * math.cos(math.radians(deg))
-        y = r * math.sin(math.radians(deg))
+        x = r * math.cos(math.radians(deg))+400
+        y = r * math.sin(math.radians(deg))+300
 
-
-        clear_canvas_now()
-        boy.draw_now(x+400,y+300)
-        delay(0.1)
+        draw_boy(x, y)
     pass
+
+
+def draw_boy(x: float, y: float):
+    clear_canvas_now()
+    boy.draw_now(x, y)
+    delay(0.1)
 
 
 while True:
